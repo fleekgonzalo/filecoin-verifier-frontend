@@ -48,6 +48,7 @@ Sentry.init({
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const history = createBrowserHistory();
 
 root.render(
   <React.StrictMode>
