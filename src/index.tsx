@@ -9,7 +9,7 @@ import DataProvider from "./context/Data/DataProvider";
 import { Wallet } from "./context/Wallet/Index";
 import { Github } from "./context/Github/Index";
 import { createBrowserHistory } from 'history';
-import { HashRouter as Router, Route, Switch, RouterHistory } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, useHistory } from "react-router-dom";
 // @ts-ignore
 import { GlobalNotification, GlobalModal } from "slate-react-system";
 import "./fonts/SuisseIntl-Regular.woff";
@@ -60,7 +60,7 @@ root.render(
               <Github.Consumer>
                 {(github) => (
                   <DataProvider wallet={wallet} github={github}>
-                  <Router history={history as RouterHistory}>
+                  <Router history={history as useHistory}>
                       <Layout>
                         <Switch>
                           <Route exact path={"/"} component={Onboarding}></Route>
