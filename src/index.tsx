@@ -8,6 +8,7 @@ import GithubProvider from "./context/Github/GithubProvider";
 import DataProvider from "./context/Data/DataProvider";
 import { Wallet } from "./context/Wallet/Index";
 import { Github } from "./context/Github/Index";
+import { createBrowserHistory } from 'history';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // @ts-ignore
 import { GlobalNotification, GlobalModal } from "slate-react-system";
