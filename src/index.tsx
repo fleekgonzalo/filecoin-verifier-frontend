@@ -60,8 +60,7 @@ root.render(
               <Github.Consumer>
                 {(github) => (
                   <DataProvider wallet={wallet} github={github}>
-                    <HashRouter history={history}>
-                    <Router history={history}>
+                     <Router history={history}>
                       <Layout>
                         <Switch>
                           <Route exact path={"/"} component={Onboarding}></Route>
@@ -89,7 +88,7 @@ root.render(
                         </Switch>
                       </Layout >
                     </Router>
-                    </HashRouter>
+                    
                     <GlobalNotification style={{ bottom: 0, right: 0 }} />
                     <GlobalModal style={{ maxWidth: "none" }} />
                   </DataProvider>
