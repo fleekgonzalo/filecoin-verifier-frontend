@@ -19,7 +19,6 @@ import * as serviceWorker from './serviceWorker';
 import Preonboarding from './pages/Preonboarding';
 import Onboarding from './pages/Onboarding';
 import Landing from './pages/Landing';
-import history from './context/History';
 import LogExplorer from './pages/LogExplorer';
 import SecretTestPage from './pages/SecretTestPage';
 import './fonts/SuisseIntl-Regular.woff'
